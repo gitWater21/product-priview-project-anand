@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+:root{
+--my-font-family: "Montserrat", sans-serif;
+--my-font-family-secondry: "Fraunces", sans-serif;
+--my-font-size: 14px;
+--my-pr-color: hsl(228, 12%, 48%);
+--my-secondry-color: hsl(212, 21%, 14%);
+}
+.flex{
+ display: flex;
+ 
+ align-items: center;
+
+ gap: 30px;
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+.body{
+ background-color: hsl(30, 38%, 92%);
+}
+.priview-box{
+ height: 630px;
+ width: 345px;
+ background-color: gold;
+ border-radius: 10px;
+ margin: auto;
+ background-color: hsl(0, 0%, 100%);
+ margin-top: 5%;
+}
+
+.priview-img{
+ width: 345px;
+ height: 240px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+
+.priview-img-box{
+ background-image: url(./image-product-mobile.jpg);
+ width: 345px;
+ height: 240px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ background-size: cover;
+
+}
+
+.priview-info-box, 
+.btn-box{
+
+ width: 300px;
+ margin: auto;
+
+ margin-block: 6%;
+
+}
+
+.prd-name{
+ letter-spacing: 3px;
+ font-family: var(--my-font-family);
+ font-size: var(--my-font-size);
+ color: var(--my-pr-color);
+}
+
+.prd-info{
+ font-family: var(--my-font-family);
+ font-size: var(--my-font-size);
+ margin-block: 6%;
+ color: hsl(228, 12%, 48%);
+ line-height: 30px;
+}
+.title-heading{
+ margin-block: 3%;
+font-family: var(--my-font-family-secondry);
+color: var(--my-secondry-color);
+
+}
+
+.price-info-box h1{
+ color: hsl(158, 36%, 37%);
+ font-family: var(--my-font-family-secondry);
+
+}
+
+strike{
+ color: var(--my-pr-color);
+}
+
+.cart-btn{
+ width: 100%;
+ height: 50px;
+ background-color: gold;
+ border: none;
+ /* margin-block: 5%; */
+ border-radius: 10px;
+ background-color: hsl(158, 36%, 37%);
+ text-align: center;
+ font-family: var(--my-font-family);
+ color: hsl(30, 38%, 92%);
+ justify-content: center;
+ gap: 10px;
+ cursor: pointer;
+}
+.cart-btn:hover{
+ background-color: hsl(158, 36%, 47%);
+}
+.cart-btn p{
+ color: hsl(0, 0%, 100%);
+ font-family: var(--my-font-family);
+ font-size: var(--my-font-size);
+ font-weight: 900;
+
+}
+
+/* media querys */
+
+@media screen and (min-width: 475px) {
+ .priview-box{
+  display: flex;
+  height: 480px;
+  width: 580px;
+
+
+ }
+
+
+
+ .priview-img-box{
+ background-image: url(./image-product-desktop.jpg);
+ width: 470px;
+ height: 480px;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+ border-top-right-radius: 0px;
+ background-size: cover;
+ 
+
+}
+
+.priview-info-box{
+ padding-inline: 20px;
+}
+.cart-btn{
+ width: 80%;
+ margin-top: 10%;
+}
+}
